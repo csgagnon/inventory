@@ -1,5 +1,5 @@
-# inventory
-Optimizing small storage spaces: modular plywood shelving units with version-controlled inventory tracking (working_copy)
+# inventory (working copy)
+Optimizing small storage spaces: modular plywood shelving units with version-controlled inventory tracking
 
 ## System requirements (optimize functional storage with version-controlled inventory tracking)
 - This modular physical inventory system is designed to accomodate the majority of plastic storage containers (i.e. tuppawear) by storing them on deep plywood shelves that accomodate the long side of the container lengths. In other words, store tuppwear containers on shelving so that the short side of the container is facing you. For small spaces, it is likely that doing so will maximize cubic feet of storage space available in the room, because in smaller rooms, the storage space is almost always a function of the perimeter. You don't have a warehouse with isles; you have a small storage area (such as an unfinished basement) with a wall perimeter that can be utilized for storage. As such, the shelving depth is fixed at 32 inches.
