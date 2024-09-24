@@ -1,4 +1,4 @@
-# inventory cli
+# inventory
 Optimizing small storage spaces: modular plywood shelving units with authenticated version-controlled inventory tracking (working copy)
 
 ## System requirements
