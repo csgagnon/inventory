@@ -1,0 +1,98 @@
+* Shelving design, lumber cut list, and quantity calculations
+** Shelve Height (2, 3, or 4 shelves)
+*** Shelve properties
+**** Leg Height = 4 inches
+**** Shelve thickness = 3.5 inches (actual width of 2x4)+ 0.5 inches (thickness of osb board) = 4 inches
+**** Required shelve vertical clearance = 21 inches
+*** 2 Shelves
+**** Total height = 4 + 4 + 21 + 4 = 33 inches (2.75 feet)
+*** 3 Shelves
+**** Total height = 4 + 4 + 21 + 4 + 21 + 4 = 58 inches (4.83 feet)
+*** 4 Shelves
+**** Total height =  4 + 4 + 21 + 4 + 21 + 4 + 21 + 4 = 83 inches (6.92 feet)
+** Depth Dimension
+*** The depth dimension is fixed at 32 inches to accomodate majority of tuppawear widths.
+** Vertical clearance Dimensions
+*** The vertical clearance in between each shelve is fixed at 21 inches to accomodity majority of tuppawear heights.
+** Horizontal Dimensions
+*** The horizontal dimension of any modular shelving unit is an function input. You decide the width of the shelve based upon the wall perimeter.
+* Function for one modular shelve
+** Inputs
+- horizontal clearance
+- vertical clearance
+** Outputs
+- number of shelves
+- optimal width of modular unit
+- quantity of plywood needed
+- quantity of 2 x 4 dimensional lumber needed (specific to each individual cut)
+- cut list
+- quantity of screws needed
+* Example of function
+** Inputs
+- horizontal clearance (inches): 55
+- vertical clearance (inches): 50
+** Outputs
+*** Number of shelves
+- Vertical clearance can only accomodate two shelves
+*** Optimal width of modular unit
+- Assume a required 23 inch horizontal clearance per tuppawear. How many times does 23 inches go into 55 inches evenly? The answer is two.
+- Shelve horizontal clearance = 2*23*in = 46 inches
+- Actual width of modular unit, including the thickness of legs on both sides = 46-in. + 2*(1.5*in) = 49 inches
+*** Quantity of plywood needed (units of 32-in X 48-inch plywood rectangles)
+- Our output unit is plywood rectangles (32-in by 48-in). This is the standard unit because each rectangle is a one-third cut from a standard 4-ft by 8-ft sheet of plywood. Now we can quantify plywood in terms of length required, like a roll of paper towel with that has a width of 32 inches. How much length do we require for this modular unit?
+- We need 46 inches of of total length
+- 4 foot (48 inch) is maximum length per cut (remember we are starting from 32"x48" rectangles)
+- 46 inches < 48 inches
+- We need one (1) 32-in x 48-in rectangle per shelve.
+- 2-shelves * 1-rectangle/shelve = two (2) 32-in x 48-in rectangles
+*** Cut list of 2-in x 4-in dimensional lumber - legs
+- Total height for two shelves is 33 inches.
+- We need four legs.
+- Four (4) 33-in cuts.
+*** Cut list of 2-in x 4-in dimensional lumber - boxes
+- We need two boxes
+- First two-by-four cut (long side of box)
+  - Two (2) 46-in cuts per box
+- Second two-by-four cut (short side of box)
+  - The two-by-fours connecting the short sides of the rectangular box. The required length of the cut needs to be calculated only once (depth is fixed).
+  - 32-in - 2*(1.5-in) = 29 inches
+  - Two (2) 29-in cuts per box
+- We need two boxes so are cuts are as follows
+  - Four (4) 46-in cuts
+  - Four (4) 29-in cuts
+*** Combined cut list
+- [X] Four (4) 29-in cuts of two-by-four
+  - [X] 1
+  - [X] 2
+  - [X] 3
+  - [X] 4
+- [X] Four (4) 46-in cuts of two-by-four
+  - [X] 1
+  - [X] 2
+  - [X] 3
+  - [X] 4
+- [X] Four (4) 33-in cuts of two-by-four
+  - [X] 1
+  - [X] 2
+  - [X] 3
+  - [X] 4
+- [X] Two 32-in x 48-in plywood rectangles
+  - [X] 
+  - [X] 
+**** How many two-by-four-by-eights?
+- 8 ft = 96-in
+- Two (2) 8-ft boards for all of the 46-in cuts: 2*46-in = 92-in < 96-in
+- One (1) 8-ft board will cover two (2) 33-in cuts and one (1) 20-in cut
+- One (1) 8-ft board will cover two (2) 33-in cuts and one (1) 20-in cut
+- One (1) 8-ft board board will cover the remaining two 29-in cuts, with some leftover material.
+- *We need a total of 2 + 1 + 1 + 1 = 5 two-by-four-by-eights*
+**** How many four-by-eight plywood sheets?
+- One four-by-eight plywood sheet would cover both of the required 32-in x 48-in rectangles, with some leftover material (another rectangle).
+- *We need one (1) four-by-eight plywood sheet.*
+**** How many screws?
+- Leg to shelve connection (large screws): 8-connections*2-screws/connection = 16 large screws
+- Plywood to box connection (small screws): 2-connections*10-screws/connection = 20 small screws
+
+* Footnotes
+- The actual cross section of 2x4 dimensional lumber is 3.5 inches x 1.5 inches, so our legs will add 1.5 inches to the total length on either side)
+
