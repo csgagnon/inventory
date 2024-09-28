@@ -13,7 +13,7 @@ Optimizing small storage spaces: modular plywood shelving units with version-con
   - Shelve depth must accomodate the long side of most containers. A depth of 32 inches can accomodate the long side of most tuppawear containers. For small spaces, it is likely that deeper, 32 inch shelves will maximize cubic feet of storage space available in the room, because in smaller rooms, the storage space is almost always a function of the available perimeter. As such, the shelving depth is fixed at 32 inches.
   -  An 8-ft-by-4-ft sheet of plywood can be cut into three 32 inch x 48 inch rectangles. By keeping the 32 inch shelf depth constant, the smaller 32-in x 48-in rectangles can be cut and combined to accomodate any shelf width. It also simplifies quantity calculations for lumber and cubic feet of functional storage.
 
-### Modular requirements (undamaged screws with no glue)
-- Assembled with two-by-four dimensional lumber, plywood sheets, and undamaged screws and without wood glue (can be rapidly deconstructed and reconfigured with minimal tooling)
+### Modular requirements 
+- Assembled with two-by-four dimensional lumber, plywood sheets, and undamaged torx screws (strip-resistant) without wood glue (capable of being deconstructed and reconfigured)
 - The legs of each modular shelving unit raise the first box off the floor by 4". Shelving that is not easily transportable is not modular. The 4 inch ground clearance provides an off-the-ground location (i.e. handles) to lift from below.
 - Modular shelves can be reconfigured, re-used, and recycled as conditions change.
